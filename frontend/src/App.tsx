@@ -25,8 +25,8 @@ const EditorTestPage = lazy(() =>
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
         <TooltipProvider>
           <AuthProvider>
             <Routes>
