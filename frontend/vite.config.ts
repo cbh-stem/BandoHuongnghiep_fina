@@ -12,6 +12,9 @@ export default defineConfig(({ mode }) => {
   const backendPort = env.APP_PORT || rootEnv.APP_PORT || '8080';
 
   return {
+
+    base: '/BandoHuongnghiep_fina/',
+    plugins: [react(), tailwindcss()],
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
